@@ -99,10 +99,17 @@ $img-frame-height: 200px;
 		text-decoration: none;
 	}
 
+	span.text {
+		visibility: hidden;
+	}
+
 	i.fa {
 		display: block;
 		font-size: 40px;
 	}
+
+	position: absolute;
+	right: 0;
 }
 
 .more-about-me {
