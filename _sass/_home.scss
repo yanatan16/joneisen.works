@@ -1,3 +1,12 @@
+i.fa {
+	a:visited & {
+		color: $grey-color;
+	}
+	a:hover & {
+		color: $grey-color-dark;
+	}
+}
+
 
 .row {
 	margin-left: 10px;
@@ -26,9 +35,6 @@
 	a:visited, a:hover {
 		text-decoration: none;
 	}
-	a:hover svg * {
-		fill: $grey-color-dark;
-	}
 }
 
 .specialties-box {
@@ -43,7 +49,7 @@
 	}
 }
 
-footer {
+.front-page-footer {
 	margin-top: 50px;
 	text-align: center;
 	width: 100%;
@@ -83,5 +89,22 @@ $img-frame-height: 200px;
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
+}
 
+.to-more-about-me {
+	margin-top: 15px;
+	display: block;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	i.fa {
+		display: block;
+		font-size: 40px;
+	}
+}
+
+.more-about-me {
+	margin-top: 100px;
 }
