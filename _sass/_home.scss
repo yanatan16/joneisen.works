@@ -1,33 +1,4 @@
-i.fa {
-	a:visited & {
-		color: $grey-color;
-	}
-	a:hover & {
-		color: $grey-color-dark;
-	}
-}
 
-
-.row {
-	margin-left: 10px;
-	margin-top: 20px;
-	display: block;
-	position: relative;
-}
-
-.col {
-	display: inline-block;
-	margin-left: 10px;
-	position: relative;
-
-	&.col--2 {
-		width: 47%;
-	}
-
-	&.col--3 {
-		width: 31%;
-	}
-}
 
 .resume-links {
 	font-size: 30px;
@@ -38,12 +9,18 @@ i.fa {
 }
 
 .specialties-box {
+	clear:both;
+	&:after {clear: both}
+
 	ul, li {
 		list-style: square;
 	}
 
 	.specialties {
+		font-size: 14px;
+
 		h3 {
+			font-size: 18px;
 			font-weight: 700;
 		}
 	}
@@ -67,6 +44,9 @@ $img-frame-height: 200px;
 
 .row--title {
 	height: $img-frame-height;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid $grey-color-light;
 }
 
 .profile-photo {
@@ -75,7 +55,7 @@ $img-frame-height: 200px;
 	width: $img-frame-width !important;
 	overflow: hidden;
 	position: relative;
-	float: right;
+	margin-left: 8% !important;
 
 	&:before {
 	  content: '';
@@ -89,27 +69,6 @@ $img-frame-height: 200px;
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
-}
-
-.to-more-about-me {
-	margin-top: 15px;
-	display: block;
-
-	&:hover {
-		text-decoration: none;
-	}
-
-	span.text {
-		visibility: hidden;
-	}
-
-	i.fa {
-		display: block;
-		font-size: 40px;
-	}
-
-	position: absolute;
-	right: 0;
 }
 
 .more-about-me {
