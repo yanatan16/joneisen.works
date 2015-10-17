@@ -1,0 +1,87 @@
+
+.row {
+	margin-left: 10px;
+	margin-top: 20px;
+	display: block;
+	position: relative;
+}
+
+.col {
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+
+	&.col--2 {
+		width: 47%;
+	}
+
+	&.col--3 {
+		width: 31%;
+	}
+}
+
+.resume-links {
+	font-size: 30px;
+
+	a:visited, a:hover {
+		text-decoration: none;
+	}
+	a:hover svg * {
+		fill: $grey-color-dark;
+	}
+}
+
+.specialties-box {
+	ul, li {
+		list-style: square;
+	}
+
+	.specialties {
+		h3 {
+			font-weight: 700;
+		}
+	}
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+/* Profile Photo */
+
+$img-width: 300px;
+$img-height: 400px;
+$img-top: 80px;
+$img-left: 0px;
+$img-frame-width: 300px;
+$img-frame-height: 200px;
+
+
+.row--title {
+	height: $img-frame-height;
+}
+
+.profile-photo {
+	display: inline-block;
+	height: $img-frame-height;
+	width: $img-frame-width !important;
+	overflow: hidden;
+	position: relative;
+	float: right;
+
+	&:before {
+	  content: '';
+	  position: absolute;
+	  z-index: -1;
+	  top: -$img-top;
+	  left: -$img-left;
+	  width: $img-width;
+	  height: $img-height;
+		background-image: url(/img/profile-photo.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+}
