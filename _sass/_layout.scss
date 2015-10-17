@@ -36,7 +36,10 @@ i.fa {
 		}
 	}
 
-	&.col--3 {
-		width: 31%;
+	@include media-query($on-palm) {
+		&.col--2 {
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 }

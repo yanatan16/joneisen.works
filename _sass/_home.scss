@@ -1,10 +1,55 @@
 
 
+
+/* Profile Photo */
+
+$img-width: 300px;
+$img-height: 400px;
+$img-top: 80px;
+$img-left: 0px;
+$img-frame-width: 300px;
+$img-frame-height: 200px;
+
+
+.row--title {
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid $grey-color-light;
+}
+
 .resume-links {
 	font-size: 30px;
 
 	a:visited, a:hover {
 		text-decoration: none;
+	}
+}
+
+.profile-photo {
+	display: inline-block;
+	height: $img-frame-height;
+	overflow: hidden;
+	position: relative;
+
+	&.col.col--2 {
+		width: $img-frame-width;
+		margin-left: 8%;
+		@include media-query($on-palm) {
+			margin-left: 0;
+		}
+	}
+
+	&:before {
+	  content: '';
+	  position: absolute;
+	  z-index: -1;
+	  top: -$img-top;
+	  left: -$img-left;
+	  width: $img-width;
+	  height: $img-height;
+		background-image: url(/img/profile-photo.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -30,45 +75,6 @@
 	margin-top: 50px;
 	text-align: center;
 	width: 100%;
-}
-
-/* Profile Photo */
-
-$img-width: 300px;
-$img-height: 400px;
-$img-top: 80px;
-$img-left: 0px;
-$img-frame-width: 300px;
-$img-frame-height: 200px;
-
-
-.row--title {
-	height: $img-frame-height;
-	padding-bottom: 20px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid $grey-color-light;
-}
-
-.profile-photo {
-	display: inline-block;
-	height: $img-frame-height;
-	width: $img-frame-width !important;
-	overflow: hidden;
-	position: relative;
-	margin-left: 8% !important;
-
-	&:before {
-	  content: '';
-	  position: absolute;
-	  z-index: -1;
-	  top: -$img-top;
-	  left: -$img-left;
-	  width: $img-width;
-	  height: $img-height;
-		background-image: url(/img/profile-photo.jpg);
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
 }
 
 .more-about-me {
