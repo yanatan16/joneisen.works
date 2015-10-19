@@ -2,4 +2,4 @@
 
 Freelancer Developer for Hire: Jon Eisen
 
-[joneisen.works](https://joneisen.works)
+[joneisen.works](http://joneisen.works)
