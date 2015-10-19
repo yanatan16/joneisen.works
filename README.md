@@ -1,5 +1,5 @@
 # joneisen.works
 
-[joneisen.works](https://joneisen.works)
+Freelancer Developer for Hire: Jon Eisen
 
-Freelancer Advertisement Site for Jon Eisen
+[joneisen.works](https://joneisen.works)
