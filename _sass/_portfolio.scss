@@ -1,9 +1,15 @@
 .portfolio {
   position: relative;
 
+  aside {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+  }
+
   a.resume {
     position: absolute;
-    top: 0;
+    top: 1em;
     right: 0;
   }
 
