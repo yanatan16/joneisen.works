@@ -10,8 +10,8 @@
                 div.style.opacity = 0
                 div.style.position = "absolute"
                 var rect = item.getBoundingClientRect()
-                div.style.top = rect.bottom + "px"
-                div.style.left = rect.left + "px"
+                div.style.top = (rect.bottom + window.scrollY) + "px"
+                div.style.left = (rect.left + window.scrollX) + "px"
                 item.title = ""
 
                 document.body.appendChild(div)
