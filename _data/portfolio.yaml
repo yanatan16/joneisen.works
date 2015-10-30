@@ -49,6 +49,9 @@
     - class: code
       href: https://github.com/yanatan16/go-spsa
       text: Go Code
+    - class: blog
+      href: http://joneisen.me/development/code/2014/01/22/rewriting-haskell-spsa-to-be-monadic.html
+      text: Rewriting haskell-spsa to be monadic
 
   - title: itertools in Go
     technologies: Go
