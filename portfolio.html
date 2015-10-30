@@ -1,0 +1,32 @@
+---
+layout: home
+title: Portfolio
+permalink: /portfolio/
+---
+
+<div class="portfolio">
+    <h1>Portfolio</h1>
+    <a class="resume" href="/">Back to Resume</a>
+    {% for section in site.data.portfolio %}
+    <div class="portfolio-section" id="{{ section.title | downcase | replace:' ','-' }}">
+        <h2>{{ section.title }}</h2>
+
+        {% for item in section.items %}
+        <div class="portfolio-item" id="{{ item.title | downcase | replace:' ','.' }}">
+            <h3>{{ item.title }}</h3>
+            <span class="technologies">{{ item.technologies }}</span>
+            <p>{{ item.content }}</p>
+            <ul class="links">
+                {% for link in item.links %}
+                <li>
+                    <a class="{{link.class}}-link" href="{{link.href}}">
+                        {% if link.text %}{{link.text}}{% else %}{{link.class | capitalize}}{% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>

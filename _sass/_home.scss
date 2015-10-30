@@ -9,9 +9,9 @@ $img-frame-height: 200px;
 
 
 .row--title {
-	padding-bottom: 20px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid $grey-color-light;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $grey-color-light;
 }
 
 .availability {
@@ -19,65 +19,68 @@ $img-frame-height: 200px;
 }
 
 .resume-links {
-	font-size: 30px;
+  .icon-link {
+    font-size: 30px;
 
-	a:visited, a:hover {
-		text-decoration: none;
-	}
+    &:visited,
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .profile-photo {
-	display: inline-block;
-	height: $img-frame-height;
-	overflow: hidden;
-	position: relative;
+  display: inline-block;
+  height: $img-frame-height;
+  overflow: hidden;
+  position: relative;
 
-	&.col.col--2 {
-		width: $img-frame-width;
-		margin-left: 8%;
-		@include media-query($on-palm) {
-			margin-left: 0;
-		}
-	}
+  &.col.col--2 {
+    width: $img-frame-width;
+    margin-left: 8%;
+    @include media-query($on-palm) {
+      margin-left: 0;
+    }
+  }
 
-	&:before {
-	  content: '';
-	  position: absolute;
-	  z-index: -1;
-	  top: -$img-top;
-	  left: -$img-left;
-	  width: $img-width;
-	  height: $img-height;
-		background-image: url(/img/profile-photo.jpg);
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -$img-top;
+    left: -$img-left;
+    width: $img-width;
+    height: $img-height;
+    background-image: url(/img/profile-photo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .specialties-box {
-	clear:both;
-	&:after {clear: both}
+  clear:both;
+  &:after {clear: both}
 
-	ul, li {
-		list-style: square;
-	}
+  ul, li {
+    list-style: square;
+  }
 
-	.specialties {
-		font-size: 14px;
+  .specialties {
+    font-size: 14px;
 
-		h3 {
-			font-size: 18px;
-			font-weight: 700;
-		}
-	}
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
 }
 
 .front-page-footer {
-	margin-top: 50px;
-	text-align: center;
-	width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
 }
 
 .more-about-me {
-	margin-top: 100px;
+  margin-top: 100px;
 }
