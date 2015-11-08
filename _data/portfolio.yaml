@@ -27,6 +27,14 @@
       href: https://github.com/Rafflecopter/node-relyq
       text: node.js Code
 
+  - title: Rafflecopter Giveaway Widget
+    technologies: Javascript, Browser weirdness
+    content: The javascript behind the 3rd-party iframe-insertion widget that powers the Rafflecopter platform.
+    links:
+      - class: live
+        href: https://www.rafflecopter.com/tour
+        text: See it in action
+
 - title: Side Projects
   items:
   - title: fyra
