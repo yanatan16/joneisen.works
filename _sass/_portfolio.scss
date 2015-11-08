@@ -49,4 +49,30 @@
     color: darken($grey-color-light, 20%);
     font-size: 14px;
   }
+
+  .toc {
+    @include media-query($on-palm) {
+      display: none;
+    }
+
+    position: fixed;
+    top: 5%;
+    left: 5%;
+
+    .toc-section {
+      padding: 0.25em 0;
+    }
+
+    .toc-section-link {
+      padding: 0.25em;
+
+      &:visited {
+        color: $brand-color;
+      }
+
+      &.active {
+        border: 1px dashed $grey-color-dark;
+      }
+    }
+  }
 }

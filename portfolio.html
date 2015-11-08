@@ -8,6 +8,16 @@ permalink: /portfolio/
     <h1>Portfolio
         <aside>Various works by Jon Eisen</aside></h1>
     <a class="resume" href="/">Back to Resume</a>
+    <div class="toc">
+        {% for section in site.data.portfolio %}
+        <div class="toc-section">
+            <a class="toc-section-link" href="#{{ section.title | downcase | replace:' ','-' }}">
+                {{section.title}}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
     {% for section in site.data.portfolio %}
     <div class="portfolio-section" id="{{ section.title | downcase | replace:' ','-' }}">
         <h2>{{ section.title }}</h2>
@@ -31,3 +41,4 @@ permalink: /portfolio/
     </div>
     {% endfor %}
 </div>
+<script type="application/javascript" src="/js/toc.js"></script>
