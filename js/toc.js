@@ -9,6 +9,7 @@
             if (toc.style.display !== 'none') {
                 document.addEventListener('scroll', onScroll)
                 setupLinks()
+                onScroll();
             }
         }, 500)
     })
