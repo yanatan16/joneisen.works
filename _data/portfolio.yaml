@@ -110,7 +110,7 @@
       href: http://make.rafflecopter.com/dockerizing-development-environments.html
       text: Dockerizing Development Environments
     - class: future
-      text: "FUTURE: Migrating to Kubernetes"
+      text: "Future Blog: Migrating to Kubernetes"
 
   - title: DevOps Musings
     links:
