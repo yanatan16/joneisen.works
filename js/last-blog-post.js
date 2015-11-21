@@ -3,7 +3,7 @@
         var req = {url: 'http://joneisen.me/last-post-title.txt'}
         nanoajax.ajax(req, function (statusCode, body, request) {
             if (statusCode == 200) {
-                var split = body.split('|*|')
+                var split = body.split('\n')
                 cb(split[0], split[1])
             }
             // silently fail
