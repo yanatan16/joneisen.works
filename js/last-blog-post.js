@@ -14,7 +14,7 @@
         var top = document.querySelector('.last-blog-post'),
             a = document.querySelector('.last-blog-post .last-blog-title')
 
-        a.innerText = title
+        a.text = title
         a.href = link
         top.style.display = 'inherit'
     }
