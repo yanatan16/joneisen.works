@@ -81,6 +81,16 @@
 
 - title: Infrastructure
   items:
+  - title: "denvr: Development Environments Reimagined"
+    technologies: Clojure, docker, rkt, git, kubernetes
+    content: "A CLI to manage development environments easily, consistently, and sharably. <i>Work In Progress</i>"
+    links:
+    - class: blog
+      href: https://github.com/yanatan16/denvr/blob/master/PROPOSAL.md
+      text: Proposal
+    - class: code
+      href: https://github.com/yanatan16/denvr
+
   - title: Custom Application Infrastructure
     technologies: DevOps, SaltStack
     content: "After building the application infrastructure for <a href='http://rafflecopter.com'>Rafflecopter</a>, I wrote and spoke about it.
