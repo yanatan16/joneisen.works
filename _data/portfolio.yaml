@@ -81,7 +81,7 @@
 
 - title: Infrastructure
   items:
-  - title: "denvr: Development Environments Reimagined"
+  - title: "denvr (Dev Environment CLI)"
     technologies: Clojure, docker, rkt, git, kubernetes
     content: "A CLI to manage development environments easily, consistently, and sharably. <i>Work In Progress</i>"
     links:
