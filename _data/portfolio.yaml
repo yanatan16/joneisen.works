@@ -27,8 +27,19 @@
       href: https://github.com/Rafflecopter/node-relyq
       text: node.js Code
 
+  - title: Personal Site
+    technologies: HTML5, CSS, Browser Javascript
+    content: My personal blog and resume site was written from the ground up with my personal style, monospaced and opinionated.
+    links:
+    - class: code
+      href: https://github.com/yanatan16/joneisen.works
+      text: Resume Source Code
+    - class: code
+      href: https://github.com/yanatan16/yanatan16.github.io
+      text: Blog Source Code
+
   - title: Rafflecopter Giveaway Widget
-    technologies: Javascript, Browser weirdness
+    technologies: Browser Javascript
     content: The javascript behind the 3rd-party iframe-insertion widget that powers the Rafflecopter platform.
     links:
       - class: live
