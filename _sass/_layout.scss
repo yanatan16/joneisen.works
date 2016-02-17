@@ -1,4 +1,3 @@
-
 /**
  * Page content
  */
@@ -36,10 +35,23 @@ i.fa {
 		}
 	}
 
+
 	@include media-query($on-palm) {
 		&.col--2 {
 			width: 100%;
 			margin-left: 0;
 		}
 	}
+}
+
+.print-only {
+  display: none;
+  @media print {
+    display: inherit;
+  }
+}
+@media print {
+  .screen-only {
+    display: none;
+  }
 }

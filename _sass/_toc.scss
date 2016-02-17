@@ -3,6 +3,10 @@
     display: none;
   }
 
+  @media print {
+    display: none;
+  }
+
   position: fixed;
   top: 5%;
   left: 5%;

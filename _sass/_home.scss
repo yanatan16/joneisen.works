@@ -1,11 +1,8 @@
 /* Profile Photo */
 
-$img-width: 300px;
-$img-height: 400px;
-$img-top: 80px;
-$img-left: 0px;
-$img-frame-width: 300px;
-$img-frame-height: 200px;
+$img-width: 347px;
+$img-height: 218px;
+$img-frame-height: 280px;
 
 
 .row--title {
@@ -27,33 +24,35 @@ $img-frame-height: 200px;
       text-decoration: none;
     }
   }
+
+  .print-only {
+    margin-left: 0;
+    font-size: 14px;
+  }
 }
 
 .profile-photo {
-  display: inline-block;
-  height: $img-frame-height;
-  overflow: hidden;
-  position: relative;
-
-  &.col.col--2 {
-    width: $img-frame-width;
-    margin-left: 8%;
-    @include media-query($on-palm) {
-      margin-left: 0;
-    }
-  }
-
-  &:before {
-    content: '';
+  &, &.col.col--2 {
     position: absolute;
-    z-index: -1;
-    top: -$img-top;
-    left: -$img-left;
-    width: $img-width;
-    height: $img-height;
-    background-image: url(/img/profile-photo.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    height: 100%;
+    margin: 0;
+    margin-top: ($img-frame-height - $img-height) / 2;
+
+    @include media-query($on-palm) {
+      position: inherit;
+      height: inherit;
+      margin-top: 0;
+    }
+
+
+    //width: $img-frame-width;
+    //height: 100%;
+
+    .profile-photo--img {
+      margin: auto 0;
+    }
   }
 }
 

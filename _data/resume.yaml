@@ -1,3 +1,33 @@
+links:
+- title: resume
+  href: /resume/
+  icon: code
+  print: joneisen.works/resume/
+- title: portfolio
+  href: /portfolio/
+  icon: folder
+  print: joneisen.works/portfolio/
+- title: github
+  href: "https://github.com/yanatan16"
+  print: yanatan16
+  icon: github
+- title: twitter
+  href: https://twitter.com/jm_eisen
+  print: "@jm_eisen"
+  icon: twitter
+- title: linkedin
+  href: "http://www.linkedin.com/in/jeisen"
+  print: linkedin.com/in/jeisen
+  icon: linkedin
+- title: blog
+  href: "http://joneisen.me"
+  print: joneisen.me
+  icon: rss
+- title: email
+  href: "mailto:jon@joneisen.works"
+  print: jon@joneisen.works
+  icon: envelope
+
 specialties:
 - title: "[<i class=\"fa fa-external-link\"> </i> DevOps Modernization](/devops/)"
   skills:
