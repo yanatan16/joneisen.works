@@ -3,7 +3,11 @@
 
   {% include head.html %}
 
-  <body>
+    <body>
+
+        <div class="print-only print-header">
+            Printed from {{ page.url | prepend: site.url }}
+        </div>
 
     <div class="page-content">
       <div class="wrapper">
