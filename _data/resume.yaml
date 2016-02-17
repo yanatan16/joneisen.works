@@ -70,7 +70,7 @@ timeline:
   - "Developed various frontend applications including [main Rafflecopter widget](http://rafflecopter.com/tour) in browser javascript and unreleased UI improvements with reagent in Clojure."
   - "Developed payment processor adapter with [Stripe](https://stripe.com/)."
 
-- title: Senior Engineer at Under Armour E-Commerce
+- title: Senior Engineer at Under Armour
   dates: Summer 2012 - September 2013
   descriptions:
   - "Architected gradual rewrite of the system for an order of magnitude improvement in usability and efficiency."
