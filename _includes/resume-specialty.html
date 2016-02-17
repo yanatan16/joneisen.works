@@ -1,0 +1,8 @@
+<div class="specialties col col--2">
+    <h3>{{ item.title | markdownify }}</h3>
+    <ul>
+        {% for skill in item.skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</div>

@@ -3,67 +3,9 @@ layout: home
 ---
 
 <div class="home">
-  <div class="row row--title">
-    <div class="title-box col col--2">
-      <h1 class="title">Jon Eisen</h1>
-      <h3 class="tagline">Developer For Hire</h3>
-      <p class="availability">
-          Lead/Senior Developer
-          <br>
-          Available Freelance
-      </p>
+  {% include personal-title.html %}
 
-      <div class="resume-links">
-          <a class="icon-link popover" href="/portfolio/" title="portfolio"><i class="fa fa-folder"></i></a>
-          <a class="icon-link popover" href="https://github.com/yanatan16" title="github" target="_blank"><i class="fa fa-github"></i></a>
-          <a class="icon-link popover" href="https://twitter.com/jm_eisen" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a class="icon-link popover" href="http://www.linkedin.com/in/jeisen" title="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a class="icon-link popover" href="http://joneisen.me" title="blog" target="_blank"><i class="fa fa-rss"></i></a>
-          <a class="icon-link popover" href="mailto:jon@joneisen.works" title="email"><i class="fa fa-envelope"></i></a>
-      </div>
-    </div>
-    <div class="profile-photo col col--2"></div>
-  </div>
-
-  <div class="specialties-box row">
-      <div class="specialties specialties--infra col col--2">
-          <h3><a href="/devops/"><i class="fa fa-external-link"> </i> DevOps Modernization</a></h3>
-          <ul>
-              <li>Custom Platform</li>
-              <li>Complex Development Environments</li>
-              <li>Continuous Integration</li>
-              <li>Scalable to team size</li>
-          </ul>
-      </div>
-
-    <div class="specialties specialties--dist-app col col--2">
-      <h3>Distributed Web Services</h3>
-      <ul>
-          <li>API Design</li>
-          <li>Idea Prototyping</li>
-          <li>Efficiency Improvements</li>
-          <li>Any language, any database</li>
-      </ul>
-    </div>
-
-    <div class="specialties specialties--front-end col col--2">
-      <h3>Front-end Applications</h3>
-      <ul>
-          <li>Single Page Applications</li>
-          <li>Browser-native Javascript</li>
-          <li>React-based Applications</li>
-          <li>Clojurescript: Reagent or Om</li>
-      </ul>
-    </div>
-
-    <div class="specialties specialties--architect col col--2">
-      <h3>Software Architecture</h3>
-      <ul><li>Design of large-scale systems</li>
-          <li>Application Security</li>
-          <li>Language Selection</li>
-          <li>Service-Oriented Architecture</li></ul>
-    </div>
-  </div>
+  {% include specialties.html %}
 
   <div class="front-page-footer">
       <p>Available for projects of any size. Locally in <a href="https://www.google.com/search?q=boulder,+CO&tbm=isch">Boulder, CO</a> or remote.</p>
@@ -93,5 +35,4 @@ layout: home
 
 <script type="text/javascript" src="/js/nanoajax.min.js"></script>
 <script type="text/javascript" src="/js/puzzle.min.js"></script>
-<script type="text/javascript" src="/js/popover.js"></script>
 <script type="text/javascript" src="/js/last-blog-post.js"></script>

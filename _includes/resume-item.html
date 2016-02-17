@@ -1,0 +1,9 @@
+<div class="resume-item">
+    <h3>{{ item.title }}</h3>
+    <div class="item-dates">{{ item.dates }}</div>
+    <ul class="item-description">
+        {% for desc in item.descriptions %}
+        <li>{{desc | markdownify}}</li>
+        {% endfor %}
+    </ul>
+</div>

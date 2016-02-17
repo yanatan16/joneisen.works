@@ -1,0 +1,65 @@
+specialties:
+- title: "[<i class=\"fa fa-external-link\"> </i> DevOps Modernization](/devops/)"
+  skills:
+  - Custom Platform
+  - Microservices Development Environments
+  - Continuous Integration / Delivery
+  - Scalability
+- title: Distributed Web Services
+  skills:
+  - API Design
+  - Idea Prototyping
+  - Efficiency Improvements
+  - Any language, any database
+- title: Front-end Applications
+  skills:
+  - Single Page Applications
+  - Browser-native Javascript
+  - React-based Applications
+  - "Clojurescript: Reagent or Om"
+- title: Software Architecture
+  skills:
+  - Design of large-scale systems
+  - Application Security
+  - Language Selection
+  - Service-Oriented Architecture
+
+timeline:
+- title: Freelance Senior Software Engineer
+  dates: October 2015 - Present
+  descriptions:
+  - "Developed a Postgres [foreign data wrapper](https://github.com/quasar-analytics/quasar-fdw) in C for [SlamData](http://slamdata.com/)'s Quasar query engine."
+  - "Developed application and algorithmic upgrades and fixes for [zotebook.io](http://zotebook.io)"
+  - "Improving the developer tooling for [Rapt Media](http://www.raptmedia.com/)"
+
+- title: Senior Code Typist at Rafflecopter
+  dates: September 2013 - October 2015
+  descriptions:
+  - "Architected and developed system for processing entries with composable and testable middleware, asynchronous queues (see [portfolio](/portfolio/#relyq)), and microservices in node.js and clojure."
+  - "Developed DevOps infrastructure with custom SaltStack setup and then containerized Kubernetes setup, including nginx load balancers and database management. (See [portfolio](/portfolio/#custom.application.infrastructure))"
+  - "Developed various frontend applications including [main Rafflecopter widget](http://rafflecopter.com/tour) in browser javascript and unreleased UI improvements with reagent in Clojure."
+  - "Developed payment processor adapter with [Stripe](https://stripe.com/)."
+
+- title: Senior Engineer at Under Armour E-Commerce
+  dates: Summer 2012 - September 2013
+  descriptions:
+  - "Architected gradual rewrite of the system for an order of magnitude improvement in usability and efficiency."
+  - "Improved web page loading speed with both frontend efficiency improvements and backend rendering algorithm changes."
+  - "Developed batch-based recommendations engine to replace Omniture on [ua.com](http://ua.com)."
+
+- title: Software Engineer at Northrop Grumman
+  dates: Summer 2009 - Summer 2012
+  descriptions:
+  - "Developed Synthetic Aperture RADAR (SAR) implementation in distributed high-throughput embedded system on specialty SIMD processers in C++."
+  - "Developed C++ middleware systems for created reusable, composable components for various use cases on embedded and hosted systems."
+  - "Developed advances in Synthetic Aperture SONAR (SAS) algorithm for specific users and use cases."
+
+background:
+- title: BS Applied Math, Georgia Tech
+  dates: Fall 2005 - Spring 2009
+  descriptions:
+  - Graduated with Highest Honor in Applied Mathematics, with a minor in Computer Science and a certificate in Entreprenuership.
+- title: MS Applied Math, Johns Hopkins
+  dates: Summer 2010 - Fall 2013
+  descriptions:
+  - Graduated from Johns Hopkins Engineering for Professionals program in Applied and Computational Mathematics, focusing on stochastic processes and optimization.

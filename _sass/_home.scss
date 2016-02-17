@@ -96,3 +96,34 @@ $img-frame-height: 200px;
 .more-about-me {
   margin-top: 50px;
 }
+
+
+/* Resume */
+
+.resume {
+  h1 {
+    margin-top: 1em;
+  }
+
+  .specialties-wrap {
+    border-bottom: 1px dashed $grey-color-dark;
+  }
+}
+
+.resume-item {
+  position: relative;
+
+  margin-top: 1em;
+
+  border-bottom: 1px dashed $grey-color-dark;
+
+  .item-dates {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+
+    color: $grey-color-dark;
+    font-size: smaller;
+    font-weight: 700;
+  }
+}

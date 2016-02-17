@@ -1,0 +1,12 @@
+<div class="specialties-wrap">
+    <div class="specialties-box row">
+        {% for item in site.data.resume.specialties limit:2 %}
+        {% include resume-specialty.html item=item %}
+        {% endfor %}
+    </div>
+    <div class="specialties-box row">
+        {% for item in site.data.resume.specialties offset:2 %}
+        {% include resume-specialty.html item=item %}
+        {% endfor %}
+    </div>
+</div>
