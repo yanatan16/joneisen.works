@@ -1,0 +1,20 @@
+<div class="talk" id="{{ talk.title | downcase | replace:' ','-' }}">
+    <h2 class="talk-title">{{ talk.title }}</h3>
+    <div class="talk-setting">
+        <span class="talk-date">{{ talk.date }}</span>
+        <span class="talk-location">{{ talk.location | markdownify }}</span>
+    </div>
+    <p class="talk-description">{{ talk.description | markdownify }}</p>
+    {% if talk.links %}
+    <ul class="talk-links">
+        {% for pair in talk.links %}
+        <li>
+            <a class="talk-link" href="{{pair[1]}}">
+                <i class="fa fa-link"></i>
+                {{pair[0]}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>

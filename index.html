@@ -16,6 +16,10 @@ layout: home
   <div class="last-blog-post">
       <p>Last Blog Post: <a class="last-blog-title"></a></p>
   </div>
+  <div class="next-talk">
+      {% assign next_talk = site.data.talks.upcoming | last %}
+      <p>Next Talk: <a class="next-talk-link" href="/talks/#{{ next_talk.title | downcase | replace:' ','-' }}">{{ next_talk.title }}</a></p>
+  </div>
 
   <div class="more-about-me" id="more-about-me">
     <h2>More About Me</h2>

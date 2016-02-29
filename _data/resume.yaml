@@ -23,6 +23,10 @@ links:
   href: "http://joneisen.me"
   print: joneisen.me
   icon: rss
+- title: talks
+  href: "/talks/"
+  print: talks
+  icon: play-circle
 - title: email
   href: "mailto:jon@joneisen.works"
   print: jon@joneisen.works

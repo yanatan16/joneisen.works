@@ -1,0 +1,17 @@
+---
+layout: home
+permalink: /talks/
+---
+
+<div class="talks">
+    <a class="home" href="/">Back to Home</a>
+    <h1>Upcoming Talks</h1>
+    {% for talk in site.data.talks.upcoming reversed %}
+    {% include talk.html talk=talk %}
+    {% endfor %}
+
+    <h1>Past Talks</h1>
+    {% for talk in site.data.talks.past %}
+    {% include talk.html talk=talk %}
+    {% endfor %}
+</div>

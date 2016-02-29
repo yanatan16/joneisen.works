@@ -1,0 +1,26 @@
+.talks {
+  .talk {
+    margin: 2em 0;
+    .talk-setting {
+      .talk-date {
+        display: inline-block;
+      }
+      .talk-location {
+        &, p {
+          display: inline-block;
+          margin: 0;
+        }
+        &:before {
+          content: ' @ ';
+        }
+      }
+    }
+    .talk-links {
+      &, li {
+        list-style: none;
+      }
+    }
+  }
+
+
+}
