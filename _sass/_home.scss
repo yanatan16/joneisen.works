@@ -128,5 +128,11 @@ $img-frame-height: 280px;
     color: $grey-color-dark;
     font-size: smaller;
     font-weight: 700;
+
+    @include media-query($on-palm) {
+      position: inherit;
+      margin-top: -1em;
+      margin-bottom: 1em;
+    }
   }
 }

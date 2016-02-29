@@ -35,6 +35,10 @@
 
   h3 {
     font-weight: 700;
+
+    @include media-query($on-palm) {
+      margin-bottom: 0.5em;
+    }
   }
 
   .links {
@@ -43,10 +47,17 @@
   }
 
   .technologies {
+    display: block;
     position: absolute;
     top: 0.5em;
     right: 0;
     color: darken($grey-color-light, 20%);
     font-size: 14px;
+
+    @include media-query($on-palm) {
+      position: relative;
+      margin-top: -1em;
+      margin-bottom: 1em;
+    }
   }
 }
