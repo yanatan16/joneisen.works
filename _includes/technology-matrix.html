@@ -1,0 +1,23 @@
+<table class="technology-matrix">
+  <thead>
+    <col span="1" class="wide">
+    <tr>
+      <th></th>
+      <th>Touched</th>
+      <th>Worked on</th>
+      <th>Knowledgeable</th>
+      <th>Excellent</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for pair in include.item | sort %}
+    <tr>
+      <td class="kind">{{pair[0]}}</td>
+      <td {% if pair[1] == 2 %}class="selected"{% endif %}></td>
+      <td {% if pair[1] == 3 %}class="selected"{% endif %}></td>
+      <td {% if pair[1] == 4 %}class="selected"{% endif %}></td>
+      <td {% if pair[1] == 5 %}class="selected"{% endif %}></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

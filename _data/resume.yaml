@@ -33,34 +33,68 @@ links:
   icon: envelope
 
 specialties:
-- title: "[<i class=\"fa fa-external-link\"> </i> DevOps Modernization](/devops/)"
+- title: Data Engineering
   skills:
-  - Custom Platform
-  - Microservices Development Environments
-  - Continuous Integration / Delivery
-  - Scalability
+  - Data Quality and Governance
+  - Streaming and Batch Processing
+  - Model/ML Development/Deployment
+  - Visualization
+- title: Team Leadership
+  skills:
+  - Clear, Concise Presentations
+  - Roadmap Development
+  - SLA-Based Direction
+  - Time Protection
 - title: Distributed Web Services
   skills:
   - API Design
-  - Idea Prototyping
+  - Prototyping
   - Efficiency Improvements
   - Any language, any database
-- title: Front-end Applications
+- title: Full-Stack Applications
   skills:
+  - Language Agnostic
   - Single Page Applications
-  - Browser-native Javascript
-  - React-based Applications
-  - "Clojurescript: Reagent or Om"
-- title: Software Architecture
-  skills:
-  - Design of large-scale systems
   - Application Security
-  - Language Selection
-  - Service-Oriented Architecture
+  - Large-scale System Design
+
+languages_matrix:
+  Python: 5
+  Clojure: 5
+  Javascript: 5
+  HTML/CSS: 5
+  SQL: 4
+  Go: 3
+  Java: 3
+  C/C++: 2
+  Scala: 2
+
+design_topics_matrix:
+  "Data Science": 5
+  "Platform Design": 5
+  "Data Streaming": 5
+  "Orchestration": 5
+  "Containerization": 5
+  "Functional Programming": 4
+  "Data Quality": 4
+  "Data Governance": 4
+  "Distributed Systems Design": 4
+  "Full-stack Applications": 4
+  "Database Design": 3
+  "ML Platform Design": 3
+  "Data Lake Design": 2
+
 
 timeline:
+- title: Lead Game Analytics Engineer at Activision Central Tech
+  dates: March 2016 - Present
+  descriptions:
+  - "Led a team of 3 engineers building a versatile orchestration platform for data engineering, ETL, web applications, ML model development, ML model deployment, and simulation."
+  - "Built data engineering for, analyzed, built dashboards, and simulated game systems for studio engineers and designers in Call of Duty Infinite Warfare, World War II, and Black Ops 4 ."
+  - "Developed and evangelized an eSports data ingestion and aggregation system ultimately used in broadcast graphics and data analysis for Call of Duty World League from 2016 - 2019."
+
 - title: Freelance Senior Software Engineer
-  dates: October 2015 - Present
+  dates: October 2015 - March 2016
   descriptions:
   - "Developed a Postgres [foreign data wrapper](https://github.com/quasar-analytics/quasar-fdw) in C for [SlamData](http://slamdata.com/)'s Quasar query engine."
   - "Developed application and algorithmic upgrades and fixes for [zotebook.io](http://zotebook.io)"

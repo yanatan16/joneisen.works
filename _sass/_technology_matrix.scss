@@ -1,0 +1,16 @@
+table.technology-matrix {
+  table-layout: fixed;
+  width: 100%;
+
+  td {
+    border: 1px dashed #ddd;
+  }
+
+  .wide {
+    width: 35%;
+  }
+
+  td.selected {
+    background-color: lightskyblue;
+  }
+}
