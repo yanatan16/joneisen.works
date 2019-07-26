@@ -41,10 +41,10 @@ specialties:
   - Visualization
 - title: Team Leadership
   skills:
-  - Clear, Concise Presentations
+  - System Architecture
   - Roadmap Development
-  - SLA-Based Direction
-  - Time Protection
+  - Multi-dimensional Prioritization
+  - Mentoring
 - title: Distributed Web Services
   skills:
   - API Design
@@ -86,8 +86,15 @@ design_topics_matrix:
 
 
 timeline:
+- title: Manager, Data Application Frameworks and Infrastructure
+  dates: May 2019 - Present
+  description:
+  - "Managed a cross-location team focused on big data processing infrastructure."
+  - "Communicated with customers about maintenance and future project requirements." 
+  - "Managed a team managing AWS, Kubernetes, Kafka, ElasticSearch, and Cassandra."
+  
 - title: Lead Game Analytics Engineer at Activision
-  dates: March 2016 - Present
+  dates: March 2016 - April 2019
   descriptions:
   - "Led a team of 3 engineers building a versatile orchestration platform for data engineering, ETL, web applications, ML model development, ML model deployment, and simulation."
   - "Built data engineering for, analyzed, built dashboards, and simulated game systems for studio engineers and designers in Call of Duty Infinite Warfare, World War II, and Black Ops 4 ."
