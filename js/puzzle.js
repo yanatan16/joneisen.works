@@ -51,7 +51,7 @@
     two.setAttribute('data-findme', 'true!')
     two.href = 'a7189haf'
     two.innerText = ''
-    document.querySelector('.front-page-footer').appendChild(two)
+    document.querySelector('body').appendChild(two)
 
     three = document.createElement('meta')
     three.name = 'secret'
