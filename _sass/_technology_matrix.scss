@@ -10,7 +10,7 @@ table.technology-matrix {
     width: 35%;
   }
 
-  td.selected {
+  td.selected, td > div.selected {
     background-color: lightskyblue;
   }
 }
