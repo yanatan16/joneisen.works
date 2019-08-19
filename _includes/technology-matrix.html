@@ -13,10 +13,10 @@
     {% for pair in include.item | sort %}
     <tr>
       <td class="kind">{{pair[0]}}</td>
-      <td class="touched{% if pair[1] == 2 %} selected"><div class="selected print-only"></div>{% else %}">{% endif %}</td>
-      <td class="worked{% if pair[1] == 3 %} selected"><div class="selected print-only"></div>{% else %}">{% endif %}</td>
-      <td class="know{% if pair[1] == 4 %} selected"><div class="selected print-only"></div>{% else %}">{% endif %}</td>
-      <td class="excellent{% if pair[1] == 5 %} selected"><div class="selected print-only"></div>{% else %}">{% endif %}</td>
+      <td class="touched{% if pair[1] == 2 %} selected"><div class="print-only">X</div>{% else %}">{% endif %}</td>
+      <td class="worked{% if pair[1] == 3 %} selected"><div class="print-only">X</div>{% else %}">{% endif %}</td>
+      <td class="know{% if pair[1] == 4 %} selected"><div class="print-only">X</div>{% else %}">{% endif %}</td>
+      <td class="excellent{% if pair[1] == 5 %} selected"><div class="print-only">X</div>{% else %}">{% endif %}</td>
     </tr>
     {% endfor %}
   </tbody>
