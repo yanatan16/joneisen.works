@@ -10,7 +10,19 @@ table.technology-matrix {
     width: 35%;
   }
 
-  td.selected, td > div.selected {
+  td.touched.selected {
     background-color: lightskyblue;
+  }
+  
+  td.worked.selected {
+    background-color: cornflowerblue;
+  }
+  
+  td.know.selected {
+    background-color: dodgerblue;
+  }
+  
+  td.excellent.selected {
+    background-color: darkblue;
   }
 }
