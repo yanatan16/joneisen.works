@@ -86,13 +86,13 @@ design_topics_matrix:
 
 
 timeline:
-- title: Manager, Data Application Frameworks and Infrastructure
+- title: Team Lead, Data Application Frameworks
   dates: May 2019 - Present
   description:
-  - "Managed a cross-location team focused on big data processing infrastructure."
-  - "Communicated with customers about maintenance and future project requirements." 
-  - "Managed a team managing AWS, Kubernetes, Kafka, ElasticSearch, and Cassandra."
-  
+  - "Managed the development of a custom visualization platform (React/Python)."
+  - "Communicated with customers about maintenance and future project requirements."
+  - "Led a team managing AWS, Kubernetes, Kafka, ElasticSearch, and Cassandra."
+
 - title: Lead Game Analytics Engineer at Activision
   dates: March 2016 - April 2019
   descriptions:
