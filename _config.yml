@@ -2,7 +2,7 @@
 title: Jon Eisen
 email: jon@joneisen.works
 description: > # this means to ignore newlines until "baseurl:"
-  Jon Eisen, Freelance Developer for hire
+  Jon Eisen, Lead Software Developer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://joneisen.works" # the base hostname & protocol for your site
 twitter_username: jm_eisen
