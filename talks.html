@@ -5,10 +5,12 @@ permalink: /talks/
 
 <div class="talks">
     <a class="home" href="/">Back to Home</a>
+    {% if site.data.talks.upcoming %}
     <h1>Upcoming Talks</h1>
     {% for talk in site.data.talks.upcoming reversed %}
     {% include talk.html talk=talk %}
     {% endfor %}
+    {% endif %}
 
     <h1>Past Talks</h1>
     {% for talk in site.data.talks.past %}

@@ -1,8 +1,10 @@
-upcoming:
+past:
 - title: Functional Relational Programming in Modern UI Development
   description: "This talk explores the origins of Functional Relational Programming (FRP), its advantages (and disadvantages), and which parts of it are prominent in today's UI development."
   date: May 24 - 26, 2016
   location: "[LambdaConf](http://lambdaconf.us/)"
+  links:
+    Slides: "http://joneisen.me/talk-frelp-ui/"
 
 - title: Parser-Combinators in Javascript
   description: We follow Tyson (my dog), on his journey to write a DSL with a parser written on Javascript, and learn about Parser-Combinators along the way.
@@ -16,21 +18,20 @@ upcoming:
   date: March 31, 2016
   location: "[Kubernetes Colorado](http://www.meetup.com/Kubernetes-Colorado/)"
   links:
-    Meetup: "http://www.meetup.com/Kubernetes-Colorado/events/229134373/"
+    Slides: "http://joneisen.me/talk-k8s-app-config/#/"
 
-past:
 - title: Clojurescript for Javascript Developers
   description: Introduction survey of clojurescript, from developing with it the first time to react-based asynchronous applications.
   date: January 26, 2016
   location: "[DenverScript Meetup](http://www.meetup.com/DenverScript/)"
   links:
     Slides: "http://joneisen.me/talk-clojurescript-for-javascript-devs/#!/cljs_demo.intro"
-    Meetup: "http://www.meetup.com/DenverScript/events/226432468/"
 
 - title: Functional Programming Basics
   description: The What, Why, and How of functional programming for new programmers.
   date: January 27, 2015
   location: "[RefactorU](http://www.refactoru.com/) Guest Lecture"
+
 
 - title: Building a Custom Infrastructure
   description: "Detailed description on how and why I built [Rafflecopter](https://www.rafflecopter.com/)'s custom infrastructure, including platform services, cluster management, and request routing."
@@ -38,8 +39,7 @@ past:
   location: "[DevOps Boulder Meetup](http://www.meetup.com/DevOps-Boulder/)"
   links:
     Slide Code: "https://github.com/yanatan16/talk-custom-infrastructure/blob/master/devops-boulder.slide"
-    Meetup: "http://www.meetup.com/DevOps-Boulder/events/211965362/"
-    Blog(s): "http://make.rafflecopter.com/custom-infrastructure-3-app-migration.html"
+    Blog: "http://make.rafflecopter.com/custom-infrastructure-3-app-migration.html"
 
 - title: Javascript Concurrency Patterns
   description: Patterns for harnessing asynchrony, targeted at new Javascripters.
@@ -49,7 +49,7 @@ past:
     Slide Code: "https://github.com/yanatan16/presentation-javascript-concurrency-patterns/blob/master/refactoru-9-23-2014.slide"
     Blog: "http://joneisen.me/development/talks/2014/09/22/javascript-concurrency-patterns.html"
 
-- title: "Book Club Moderator: [SICP](https://mitpress.mit.edu/sicp/)"
+- title: "Book Club Moderator: SICP"
   description: Led discussion, picked material, worked examples to help others explore this amazing book.
   date: March 2014
   location: Ad Hoc Book Club
@@ -63,4 +63,3 @@ past:
   location: "[Baltimore MongoDB Users Group](http://www.meetup.com/Baltimore-MongoDB-Users-Group/)"
   links:
     Slides: "http://revealme.herokuapp.com/yanatan16/mongodb-indexing-presentation"
-    Meetup: "http://www.meetup.com/Baltimore-MongoDB-Users-Group/events/120430122/"

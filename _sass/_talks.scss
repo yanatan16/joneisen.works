@@ -4,6 +4,8 @@
     .talk-setting {
       .talk-date {
         display: inline-block;
+        float: right;
+        font-weight: 300;
       }
       .talk-location {
         &, p {

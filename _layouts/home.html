@@ -6,16 +6,15 @@
     <body>
 
         <div class="print-only print-header">
-            Printed from {{ page.url | prepend: site.url }}
+            This resume looks better on {{ page.url | prepend: site.url }}.
         </div>
 
     <div class="page-content">
-      <div class="wrapper">
-        {{content}}
-      </div>
+        <div class="wrapper">
+            {{content}}
+        </div>
     </div>
 
-    {% include scripts.html %}
-  </body>
+    </body>
 
 </html>

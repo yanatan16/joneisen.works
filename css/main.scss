@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: 'Anonymous Pro', serif;
+$base-font-family: 'Source Sans Pro', sans-serif;;
 $base-font-size:   18px;
 $small-font-size:  $base-font-size * 0.875;
 $tiny-font-size:  $base-font-size * 0.75;
@@ -16,7 +16,8 @@ $spacing-unit:     30px;
 
 $text-color:       #000102;
 $background-color: #fff;
-$brand-color:      darken(#597fa5, 10%);
+$brand-color:      darken(#fcba03, 10%);
+
 
 $grey-color:       #597fa5;
 $grey-color-light: lighten($grey-color, 40%);
@@ -50,10 +51,6 @@ $on-laptop:        1080px;
         "base",
         "layout",
         "home",
-        "portfolio",
-        "popover",
-        "devops",
-        "toc",
-        "talks",
-	"technology_matrix"
+        "resume",
+        "talks"
 ;

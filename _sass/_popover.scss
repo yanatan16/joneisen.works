@@ -1,6 +1,0 @@
-.popover-box {
-  transform: translateX(-50%) translateX(15px);
-  @include media-query($on-palm) {
-    transform: none;
-  }
-}

@@ -1,0 +1,30 @@
+.timeline {
+    font-weight: 400;
+    float: right;
+    font-style: italic;
+}
+
+
+@media print {
+    .print-header {
+
+    }
+
+    body {
+        font-size: 12px;
+        line-height: 1.1em;
+    }
+
+    p, ul {
+        break-before: avoid-page;
+        break-inside: avoid-page;
+        break-after: auto;
+    }
+
+    h1, h2, h3, h4, h5 {
+        display: block;
+        break-before: auto;
+        break-inside: avoid-page;
+        break-after: avoid-page;
+    }
+}
