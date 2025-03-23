@@ -2,13 +2,24 @@
 
 ### Data Engineering (2016 - Present)
 
-I recently wrote a blog post called [Data Engineering Lessons](http://joneisen.me/programming/2022/08/01/data-engineering-lessons.html).
+#### Apple | Speech Recognition <span class="timeline">Oct 2023 to Present</span>
 
-#### Apple | AIML <span class="timeline">Dec 2019 to Present</span>
+- **Iceberg Migration**
+Led an organization-wide effort to migrate 20,000+ datasets from parquet to Iceberg. Built tools, documented process, educated peers, and of course, migrated many datasets. Helped set requirements for tool owners to adopt Iceberg.
 
+- **Transcription Support API**
+Building a new API to improve the data annotation process by providing phonetic search of the contextual information associated with a request. Phonetic search improves annotation speed and effectiveness in finding the correct entity in the transcription.
+
+- **Speech Catalog**
+Designed, built, and maintain a custom Dataset Catalog to manage, discover, and inspect Speech Recognition datasets. Speech Recognition has tens of thousands of datasets for training and evaluation of models. Speech Catalog is enhanced with domain knowledge to help solve challenges managers, engineers, and modelers face on a day-to-day basis. Built in Python and Javascript, leveraging Trino, Iceberg, and Spark for data access, deploying in Kubernetes with helmfile, and storage in PostgreSQL on AWS RDS.
+
+#### Apple | AIML Instrumentation Platform <span class="timeline">Dec 2019 to Oct 2023</span>
+
+- **AIMLInstrumentationStreams**
+Designed and built an on-device library for inspecting the data that was originally designed to be shipped off-device for later analysis. The library joins together the 1000+ small messages that make up a single Siri request using graph traversal of interconnected components, allowing the caller to easily retrieve information that original came from disparate systems. Now used to enable differential privacy of users by running analyses on-device. Built in Swift and Objective-C.
 
 - **Antero**
-A data inspection tool originally built for my personal understanding of the data. Then, it became a validator of data infrastructure, tooling, correctness, and joinability. Eventually, I transformed it into the premier data-in-development debugging and metrics tool, a "vital" part of shipping Siri On Device. Built in Clojure and Javascript, running Flink ETL, deploying in Kubernetes with helmfile, and storage in ElasticSearch.
+Designed, built, and maintained a data-in-development inspection and verification tool. Originally built to help understand how the data described a Siri user interaction, it became a vital part of shipping Siri On-Device, accelerating the work of making Siri more efficient and finding issues with data joinability and correctness. Built in Clojure and Javascript, running Flink ETL, deploying in Kubernetes with helmfile, and storage in ElasticSearch.
 
 #### Activision | Central Tech <span class="timeline">Mar 2016 to Dec 2019</span>
 
