@@ -5,7 +5,7 @@ permalink: /resume
 ---
 
 <div class="print-only print-header">
-  This resume looks better on https://joneisen.me/resume
+  This resume looks better on https://joneisen.works/resume
 </div>
 
 # Jon Eisen
