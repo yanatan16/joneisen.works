@@ -4,6 +4,12 @@
 
 #### Apple | Speech Recognition <span class="timeline">Oct 2023 to Present</span>
 
+- **Lex - Your Speech Data AI Analyst**
+Lex is an AI chatbot with tool access to our Speech Catalog and Trino tables, with built-in knowledge harvested from our tables and documentation websites. It also can materialize datasets at the request of users using SQL transpiling and Spark. It has revolutionized accessibility to data in the organization. Built with Python, Interlinked, Conductor, Trino, Spark, and Kubernetes.
+
+- **Horizon Data Tables**
+Sonic Horizon is a data consolidation project designed to put all available Speech datasets together in the same schema in a few tables. I helped design the schema, map many different datasets schemas in, developed our vendor data onboarding process and pipeline, and helped develop our machine annotation pipeline. Built with Python, Trino, Bolt, and Spark.
+
 - **Iceberg Migration**
 Led an organization-wide effort to migrate 20,000+ datasets from parquet to Iceberg. Built tools, documented process, educated peers, and of course, migrated many datasets. Helped set requirements for tool owners to adopt Iceberg.
 

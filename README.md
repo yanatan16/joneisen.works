@@ -1,5 +1,5 @@
 # joneisen.works
 
-Freelancer Developer for Hire: Jon Eisen
+My resume.
 
 [joneisen.works](http://joneisen.works)
