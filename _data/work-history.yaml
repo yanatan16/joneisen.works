@@ -1,0 +1,59 @@
+periods:
+  - title: "Data Engineering"
+    timeframe: "2016 - Present"
+    roles:
+      - company: "Apple"
+        team: "Speech Recognition"
+        dates: "Oct 2023 to Present"
+        projects:
+          - name: "Lex - Your Speech Data AI Analyst"
+            description: "Built an AI chatbot with tool access to Speech Catalog and Trino tables, with built-in knowledge harvested from documentation. Enables users to materialize datasets on-demand using SQL transpiling and Spark. Revolutionized accessibility to data across the organization."
+            technologies: ["Python", "Interlinked", "Conductor", "Trino", "Spark", "Kubernetes"]
+          - name: "Horizon Data Tables"
+            description: "Designed schema and built consolidation pipeline to unify all Speech datasets into shared tables. Developed vendor data onboarding process and machine annotation pipeline to standardize disparate dataset schemas."
+            technologies: ["Python", "Trino", "Bolt", "Spark"]
+          - name: "Iceberg Migration"
+            description: "Led an organization-wide effort to migrate 20,000+ datasets from parquet to Iceberg. Built tools, documented process, educated peers, and of course, migrated many datasets. Helped set requirements for tool owners to adopt Iceberg."
+            technologies: ["Iceberg", "Parquet", "Python"]
+          - name: "Transcription Support API"
+            description: "Building a new API to improve the data annotation process by providing phonetic search of the contextual information associated with a request. Phonetic search improves annotation speed and effectiveness in finding the correct entity in the transcription."
+            technologies: ["Python", "API"]
+            hidden: true
+          - name: "Speech Catalog"
+            description: "Designed, built, and maintain a custom Dataset Catalog to manage, discover, and inspect Speech Recognition datasets. Speech Recognition has tens of thousands of datasets for training and evaluation of models. Speech Catalog is enhanced with domain knowledge to help solve challenges managers, engineers, and modelers face on a day-to-day basis."
+            technologies: ["Python", "Javascript", "Trino", "Iceberg", "Spark", "Kubernetes", "PostgreSQL", "AWS RDS"]
+      - company: "Apple"
+        team: "AIML Instrumentation Platform"
+        dates: "Dec 2019 to Oct 2023"
+        projects:
+          - name: "AIMLInstrumentationStreams"
+            description: "Designed and built an on-device library for inspecting the data that was originally designed to be shipped off-device for later analysis. The library joins together the 1000+ small messages that make up a single Siri request using graph traversal of interconnected components, allowing the caller to easily retrieve information that original came from disparate systems. Now used to enable differential privacy of users by running analyses on-device."
+            technologies: ["Swift", "Objective-C"]
+          - name: "Antero"
+            description: "Designed, built, and maintained a data-in-development inspection and verification tool. Originally built to help understand how the data described a Siri user interaction, it became a vital part of shipping Siri On-Device, accelerating the work of making Siri more efficient and finding issues with data joinability and correctness."
+            technologies: ["Clojure", "Javascript", "Flink", "Kubernetes", "ElasticSearch"]
+      - company: "Activision"
+        team: "Central Tech"
+        dates: "Mar 2016 to Dec 2019"
+        summary: "Developed and evangelized eSports data ingestion and aggregation system for Call of Duty World League broadcast graphics and analysis. Performed advanced sabremetrics research including win probability modeling. Built Play of the Game simulation matching game code to test weighting changes on real data before production release. Led team of 3 engineers providing operations for databases, CI tooling, deployment platforms, ElasticSearch, and Kafka."
+        technologies: ["Node.js", "React", "Redux", "Postgres", "Spark", "Scala", "Kafka", "Kubernetes", "Helm"]
+  - title: "Web and Distributed Systems"
+    timeframe: "2012 - 2015"
+    roles:
+      - company: "Rafflecopter"
+        dates: "Sep 2013 to Oct 2015"
+        summary: "Architected and developed core entry processing system with composable middleware, asynchronous queues, and microservices. Redesigned the Rafflecopter Widget, a Javascript embeddable entry form used by thousands of sites for giveaways. Led DevOps infrastructure evolution, migrating from SaltStack to early Kubernetes deployment platform."
+        technologies: ["Node.js", "Clojure", "MongoDB", "Javascript", "Clojurescript", "Reagent", "SaltStack", "Kubernetes"]
+      - company: "Under Armour"
+        team: "eCommerce"
+        dates: "July 2012 to Sep 2013"
+        summary: "Developed batch-based recommendations engine to replace Omniture on ua.com. Significantly improved page load performance by optimizing recursive JSON rendering system and custom ColdFusion renderer. Built CI/CD deployment system with IRC Chat-Ops for full Continuous Delivery."
+        technologies: ["Python", "Disco", "ColdFusion", "JSON", "Javascript", "Ruby", "Capistrano"]
+  - title: "Algorithms and High Performance Computing"
+    timeframe: "2009 - 2012"
+    roles:
+      - company: "Northrop Grumman"
+        team: "Electronic Systems"
+        dates: "May 2009 to July 2012"
+        summary: "Key developer and debugger on Jupiter RADAR system, a modular RADAR running on embedded high performance computing platform. Improved system architecture (UML), intercomponent communication, and CI tooling. Brought SAR (Synthetic Aperture RADAR) algorithm to program completion. Researched High Speed SAS (Synthetic Aperture SONAR) and developed mitigation strategies to achieve consistent resolution, including theory, models, simulation, and high performance implementation."
+        technologies: ["C++", "UML", "ClearCase", "MATLAB"]

@@ -1,0 +1,11 @@
+<div class="resume-project">
+  <h5 class="project-name">{{ include.project.name }}</h5>
+  <p class="project-description">{{ include.project.description }}</p>
+  {% if include.project.technologies %}
+  <div class="project-technologies">
+    {% for tech in include.project.technologies %}
+      {% include tech-tag.html tech=tech %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

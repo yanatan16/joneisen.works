@@ -1,0 +1,11 @@
+<div class="resume-period" id="{{ include.period.title | downcase | replace: ' ', '-' }}">
+  <div class="period-header">
+    <h3 class="period-title">{{ include.period.title }}</h3>
+    <span class="period-timeframe">{{ include.period.timeframe }}</span>
+  </div>
+  <div class="period-timeline">
+    {% for role in include.period.roles %}
+      {% include resume-role.html role=role %}
+    {% endfor %}
+  </div>
+</div>

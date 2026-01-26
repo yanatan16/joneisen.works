@@ -1,30 +1,438 @@
-.timeline {
-    font-weight: 400;
-    float: right;
-    font-style: italic;
+// Resume Page Styles
+
+.resume-page {
+  // Overall page container
+
+  // Bio paragraphs (intro text before Work History)
+  > p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 
+// Period Section (Data Engineering, Web and Distributed Systems, etc.)
+.resume-period {
+  margin-bottom: $spacing-unit * 2;
+  position: relative;
 
+  .period-header {
+    border-bottom: 2px solid $brand-color;
+    padding-bottom: $spacing-unit / 3;
+    margin-bottom: $spacing-unit;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .period-title {
+      font-weight: 900;
+      color: $text-color;
+      margin: 0;
+    }
+
+    .period-timeframe {
+      font-weight: 700;
+      color: $grey-color;
+      font-size: $small-font-size;
+    }
+  }
+
+  .period-timeline {
+    position: relative;
+    padding-left: $spacing-unit;
+
+    // Vertical timeline line
+    &::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: $grey-color-light;
+    }
+  }
+}
+
+// Individual Role (Apple, Activision, etc.)
+.resume-role {
+  position: relative;
+  margin-bottom: $spacing-unit * 1.5;
+
+  // Timeline dot
+  &::before {
+    content: '';
+    position: absolute;
+    left: -($spacing-unit - 2px);
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $brand-color;
+    border: 2px solid $background-color;
+    z-index: 1;
+  }
+
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $spacing-unit / 2;
+
+    .role-company {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0;
+      color: $text-color;
+    }
+
+    .role-dates {
+      font-weight: 400;
+      font-style: italic;
+      color: $grey-color;
+      font-size: $small-font-size;
+      white-space: nowrap;
+      margin-left: $spacing-unit / 2;
+    }
+
+    @include media-query($on-palm) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .role-dates {
+        margin-left: 0;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .role-projects {
+    padding-left: $spacing-unit / 2;
+  }
+
+  .role-summary {
+    padding-left: $spacing-unit / 2;
+
+    p {
+      margin-bottom: 10px;
+      line-height: $base-line-height;
+    }
+
+    .role-technologies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+  }
+}
+
+// Individual Project
+.resume-project {
+  margin-bottom: $spacing-unit;
+
+  .project-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: darken($grey-color, 10%);
+  }
+
+  .project-description {
+    margin-bottom: 10px;
+    line-height: $base-line-height;
+  }
+
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+}
+
+// Technology Tags
+.tech-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: lighten($grey-color-light, 5%);
+  color: darken($grey-color, 15%);
+  border-radius: 12px;
+  font-size: $tiny-font-size;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: $grey-color-light;
+  }
+}
+
+// Education Section
+.education-section {
+  margin-top: $spacing-unit * 2;
+  padding-top: $spacing-unit;
+  border-top: 2px solid $brand-color;
+
+  .education-item {
+    margin-bottom: $spacing-unit;
+
+    .education-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+
+      .institution {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .education-date {
+        font-weight: 400;
+        font-style: italic;
+        color: $grey-color;
+        font-size: $small-font-size;
+      }
+
+      @include media-query($on-palm) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .degree {
+      color: darken($grey-color, 5%);
+      font-size: 16px;
+    }
+  }
+}
+
+// Print Styles
 @media print {
-    .print-header {
+  @page {
+    margin: 0.5in 0.5in;
+    size: auto;
+  }
 
+  .print-header {
+    font-size: 8px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-style: italic;
+  }
+
+  .resume-page {
+    font-size: 11px;
+    line-height: 1.2;
+
+    > p {
+      font-size: 10px;
+      line-height: 1.3;
+      margin-bottom: 0.4em;
     }
 
-    body {
-        font-size: 12px;
-        line-height: 1.1em;
+    > h2 {
+      display: none;
+    }
+  }
+
+  .resume-period {
+    margin-bottom: 12px;
+    page-break-inside: auto;
+    break-inside: auto;
+
+    // Add margin to first period to replace hidden Work History heading
+    &:first-of-type {
+      margin-top: 1em;
     }
 
-    p, ul {
-        break-before: avoid-page;
-        break-inside: avoid-page;
-        break-after: auto;
+    .period-header {
+      border-bottom: 1px solid #333;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      page-break-after: avoid;
+      break-after: avoid;
+
+      .period-title {
+        font-size: 16px;
+      }
+
+      .period-timeframe {
+        font-size: 11px;
+      }
     }
 
-    h1, h2, h3, h4, h5 {
+    .period-timeline {
+      padding-left: $spacing-unit / 2;
+
+      // Remove timeline line in print
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .resume-role {
+    page-break-inside: auto;
+    break-inside: auto;
+    margin-bottom: 10px;
+    position: relative;
+
+    // Keep timeline dot in print, but darker
+    &::before {
+      content: '';
+      position: absolute;
+      left: -($spacing-unit - 2px);
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #333;
+      border: 2px solid #fff;
+      z-index: 1;
+    }
+
+    .role-header {
+      page-break-after: avoid;
+      break-after: avoid;
+
+      .role-company {
+        font-size: 14px;
+      }
+
+      .role-dates {
+        font-size: 10px;
+      }
+    }
+
+    .role-projects {
+      padding-left: 0;
+    }
+
+    .role-summary {
+      padding-left: 0;
+
+      p {
+        margin-bottom: 4px;
+        font-size: 11px;
+      }
+
+      .role-technologies {
+        margin-top: 0;
+        margin-bottom: 6px;
         display: block;
-        break-before: auto;
-        break-inside: avoid-page;
-        break-after: avoid-page;
+        font-size: 9px;
+        font-weight: 600;
+        color: #555;
+        font-style: italic;
+
+        &::before {
+          content: 'Tech: ';
+          font-weight: 700;
+        }
+
+        .tech-tag {
+          background: none;
+          padding: 0;
+          border-radius: 0;
+          font-size: 9px;
+          color: #555;
+
+          &:not(:last-child)::after {
+            content: ', ';
+          }
+        }
+      }
     }
+  }
+
+  .resume-project {
+    margin-bottom: 8px;
+    page-break-inside: auto;
+    break-inside: auto;
+
+    .project-name {
+      font-size: 12px;
+      margin-bottom: 2px;
+    }
+
+    .project-description {
+      margin-bottom: 2px;
+      font-size: 11px;
+    }
+
+    .project-technologies {
+      margin-top: 0;
+      margin-bottom: 6px;
+      display: block;
+      font-size: 9px;
+      font-weight: 600;
+      color: #555;
+      font-style: italic;
+
+      &::before {
+        content: 'Tech: ';
+        font-weight: 700;
+      }
+
+      .tech-tag {
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        font-size: 9px;
+        color: #555;
+
+        &:not(:last-child)::after {
+          content: ', ';
+        }
+      }
+    }
+  }
+
+  .education-section {
+    margin-top: $spacing-unit;
+    padding-top: 0;
+    border-top: none;
+
+    // Add Education heading styled like period headers
+    &::before {
+      content: 'Education';
+      display: block;
+      font-size: 16px;
+      font-weight: 900;
+      border-bottom: 1px solid #333;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+    }
+
+    .education-item {
+      margin-bottom: $spacing-unit / 3;
+      page-break-inside: avoid;
+
+      .education-header {
+        .institution {
+          font-size: 13px;
+        }
+
+        .education-date {
+          font-size: 10px;
+        }
+      }
+
+      .degree {
+        font-size: 11px;
+      }
+    }
+  }
+
+  // Ensure proper page breaks
+  h1, h2, h3, h4, h5 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  .resume-role, .resume-project, .education-item {
+    page-break-inside: avoid;
+  }
 }

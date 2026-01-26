@@ -1,0 +1,26 @@
+<div class="resume-role">
+  <div class="role-header">
+    <h4 class="role-company">{{ include.role.company }}{% if include.role.team %} | {{ include.role.team }}{% endif %}</h4>
+    <span class="role-dates">{{ include.role.dates }}</span>
+  </div>
+  {% if include.role.summary %}
+  <div class="role-summary">
+    <p>{{ include.role.summary }}</p>
+    {% if include.role.technologies %}
+    <div class="role-technologies">
+      {% for tech in include.role.technologies %}
+        {% include tech-tag.html tech=tech %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% else %}
+  <div class="role-projects">
+    {% for project in include.role.projects %}
+      {% unless project.hidden %}
+        {% include resume-project.html project=project %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
